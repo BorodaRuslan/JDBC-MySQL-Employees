@@ -28,7 +28,7 @@ public class EmployeesReadRepository {
                 employee.setId(rs.getInt("id"));
                 employee.setLastName(rs.getString("lastName"));
                 employee.setFirstName(rs.getString("firstName"));
-                employee.setBirthDate(rs.getString("birthDate"));
+                employee.setBirthDate(rs.getDate("birthDate"));
                 employee.setPositionId(rs.getInt("positionId"));
                 employee.setPhone(rs.getString("phone"));
                 employee.setSalary(rs.getDouble("salary"));
